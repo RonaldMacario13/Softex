@@ -1,4 +1,4 @@
-'''
+''' DESENVOLVIMENTO 1
 Desenvolva um programa que utiliza o nome de um aluno, duas notas e a quantidade de faltas que ele teve.
 Conclua se o aluno está aprovado ou reprovado de acordo com as especificações:
 
@@ -14,6 +14,7 @@ faltas = int(input("Digite a quantidade de faltas: "))
 
 media = (nota1 + nota2) / 2
 
+print("---------------------------")
 if (media < 7.0) or (faltas > 3):
     print(f"O nome do aluno é: {nome}")
     print("Aluno reprovado!")
