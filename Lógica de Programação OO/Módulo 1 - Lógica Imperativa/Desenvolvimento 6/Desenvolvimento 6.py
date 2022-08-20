@@ -1,5 +1,7 @@
 import pandas as pd
 
+# Eu criei um banco de dados para que não seja necessário fazer o input de 100 alunos todas as vezes.
+
 # O delimiter é o delimitador das colunas.
 # O index_col coloca as colunas como index.
 bancoDeDados = pd.read_csv("bd-Desen6.csv", delimiter=";", index_col=0)
