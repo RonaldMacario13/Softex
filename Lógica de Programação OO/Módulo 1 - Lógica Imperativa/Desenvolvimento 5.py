@@ -159,14 +159,14 @@ def altoTerrestre():
     print("-----------------------------------------")
     print(" ")
     print('"É alto" foi escolhido!')
-    print("Agora quero saber se é .")
+    print("Agora quero saber se usa carroceria ou se pode ter cobrador.")
     global resposta
     resposta = remove_non_ascii_normalized(
-        str(input("É alto? ").rstrip().lstrip()))
+        str(input("Usa carroceria? ").rstrip().lstrip()))
     if resposta == "sim":
         carroceria()
     elif resposta == "nao":
-        print("Então é leve!")
+        print("Então pode ter cobrador!")
         cobrador()
     else:
         print("Resposta inválida! Tente novamente")
