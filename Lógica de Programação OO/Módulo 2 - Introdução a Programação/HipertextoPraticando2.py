@@ -6,9 +6,18 @@ informe a classificação do IMC.
 
 def imc(peso, altura):
     imc = peso / (altura*altura)
-    return imc
+    if imc <= 18.5:
+        return "Magreza"
+    elif (imc > 18.5) and (imc <= 24.9):
+        return "Saudável"
+    elif (imc > 24.9) and (imc <= 29.9):
+        return "Sobrepeso"
+    elif (imc > 29.9) and (imc <= 39.9):
+        return "Obesidade"
+    else:
+        return "Obesidade grave"
 
-p = float(input("Informe seu peso: "))
-a = float(input("Informe sua altura: "))
+p = float(input("Informe seu peso (em kg): "))
+a = float(input("Informe sua altura (em metros): "))
 
 print(imc(p, a))
